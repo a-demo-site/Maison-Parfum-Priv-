@@ -232,15 +232,15 @@ function renderHome() {
   }).join("");
 
   app.innerHTML = `
-    <section class="hero">
-      <h2>Luxury perfumes, shared privately</h2>
-      <p>Browse brands, open a product, and tap Buy / Enquire to continue the conversation on WhatsApp.</p>
+    <section class="editorial-banner">
+      <p class="editorial-sub">New arrivals · 2025 Collection</p>
+      <h2 class="editorial-title">Crafted for those<br>who know.</h2>
+      <p class="editorial-note">Four of the world's most celebrated houses.</p>
     </section>
 
     <div class="section-row">
       <div>
-        <h2 class="section-title">Brands</h2>
-        <p class="section-copy">Select a collection to explore the catalog.</p>
+        <h2 class="section-title">Collections</h2>
       </div>
     </div>
 
