@@ -427,7 +427,7 @@ function initCarousel() {
     dot.addEventListener("click", () => goTo(Number(dot.dataset.index)));
   });
 
-  setInterval(() => goTo((current + 1) % total), 3500);
+  setInterval(() => goTo((current + 1) % total), 2000);
 
   let startX = 0;
   track.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; });
