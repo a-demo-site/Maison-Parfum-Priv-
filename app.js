@@ -407,3 +407,30 @@ function escapeHtml(value) {
 function escapeAttribute(value) {
   return escapeHtml(value).replace(/`/g, "&#96;");
 }
+function initCarousel() {
+  const track = document.getElementById("carouselTrack");
+  const dots = document.querySelectorAll(".dot");
+  if (!track) return;
+
+  let current = 0;
+  const total = 3;
+
+  function goTo(index) {
+    current = index;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((dot, i) => dot.classList.toggle("active", i === current));
+  }
+
+  dots.forEach((dot) => {
+    dot.addEventListener("click", () => goTo(Number(dot.dataset.index)));
+  });
+
+  setInterval(() => goTo((current + 1) % total), 3500);
+
+  let startX = 0;
+  track.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; });
+  track.addEventListener("touchend", (e) => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? (current + 1) % total : (current - 1 + total) % total);
+  });
+}
