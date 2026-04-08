@@ -221,17 +221,17 @@ function renderHome() {
     state.products.some((product) => product.category === name)
   );
 
-  const cards = categories.map((category) => {
-    const items = state.products.filter((product) => product.category === category);
-    const startPrice = Math.min(...items.map((p) => p.price));
+    const cards = categories.map((category) => {
+    const img = BRAND_IMAGES[category] || "";
 
     return `
       <a class="category-card" href="#category/${encodeURIComponent(category)}">
-        <div>
+        <img class="category-card-img" src="${img}" alt="${escapeAttribute(category)}" />
+        <div class="category-card-overlay"></div>
+        <div class="category-card-body">
           <h3>${escapeHtml(category)}</h3>
-          <p>${items.length} products · From ₹${formatPrice(startPrice)}</p>
+          <div class="category-arrow">View collection →</div>
         </div>
-        <div class="category-arrow">View collection →</div>
       </a>
     `;
   }).join("");
