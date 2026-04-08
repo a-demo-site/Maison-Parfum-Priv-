@@ -234,21 +234,21 @@ function renderHome() {
     <section class="carousel">
       <div class="carousel-track" id="carouselTrack">
         <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1541643600914-78b084683702?w=900&q=80" alt="Chanel Collection" />
+          <img src="assets/banner1.jpg" alt="Banner 1" />
           <div class="carousel-caption">
             <p class="editorial-sub">Chanel · Exclusive Collection</p>
             <h2 class="editorial-title">Timeless<br>Elegance.</h2>
           </div>
         </div>
         <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=900&q=80" alt="Dior Collection" />
+          <img src="assets/banner2.jpg" alt="Banner 2" />
           <div class="carousel-caption">
             <p class="editorial-sub">Dior · Haute Parfumerie</p>
             <h2 class="editorial-title">Born to<br>Bloom.</h2>
           </div>
         </div>
         <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1590156206657-aec4e8708b27?w=900&q=80" alt="Creed Collection" />
+          <img src="assets/banner3.jpg" alt="Banner 3" />
           <div class="carousel-caption">
             <p class="editorial-sub">Creed · Heritage Since 1760</p>
             <h2 class="editorial-title">Wear Your<br>Legacy.</h2>
