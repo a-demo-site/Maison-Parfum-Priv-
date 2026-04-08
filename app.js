@@ -21,10 +21,10 @@ Yves Saint Laurent,Y Signature,11490,"https://source.unsplash.com/featured/1200x
 const CATEGORY_ORDER = ["Chanel", "Dior", "Creed", "Yves Saint Laurent"];
 
 const BRAND_IMAGES = {
-  "Chanel": "assets/banner1.jpg",
-  "Dior": "assets/banner2.jpg",
-  "Creed": "assets/banner3.jpg",
-  "Yves Saint Laurent": "assets/banner1.jpg"
+  "Chanel": "assets/collection1.jpg",
+  "Dior": "assets/collection2.jpg",
+  "Creed": "assets/collection3.jpg",
+  "Yves Saint Laurent": "assets/collection4.jpg"
 };
 
 const app = document.getElementById("app");
