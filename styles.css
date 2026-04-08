@@ -1,14 +1,14 @@
 :root {
-  --bg: #0b0b0b;
-  --panel: #131313;
-  --panel-2: #1a1a1a;
-  --text: #f6f3ee;
-  --muted: #c8c0b3;
-  --line: rgba(200, 169, 106, 0.18);
-  --gold: #c8a96a;
-  --gold-strong: #e0bf7a;
+  --bg: #f8f6f2;           /* warm white instead of black */
+  --panel: #ffffff;
+  --panel-2: #f2efe9;
+  --text: #1a1a1a;         /* near black text */
+  --muted: #7a7369;
+  --line: rgba(0, 0, 0, 0.1);
+  --gold: #9a7b4f;         /* muted gold, not bright */
+  --gold-strong: #7a5e35;
   --white: #ffffff;
-  --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  --shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
   --radius: 20px;
 }
 
@@ -21,11 +21,7 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  background:
-    radial-gradient(circle at top, rgba(200, 169, 106, 0.12), transparent 28%),
-    linear-gradient(180deg, #0c0c0c 0%, #080808 100%);
+  background: #f8f6f2;
   color: var(--text);
 }
 
