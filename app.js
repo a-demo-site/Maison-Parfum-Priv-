@@ -1,6 +1,6 @@
 const CONFIG = {
   csvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6zxv4YYveNHhDox4VBHK6UVYPtPoYJFuXBccDtzn7lvTvlbQDfrNLbBqMnwzjy98LLSESGg1Lq42C/pub?gid=0&single=true&output=csv",
-  whatsappNumber: "919876543210",
+  whatsappNumber: "919930466520",
   storeName: "Maison Parfum Privé"
 };
 
