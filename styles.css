@@ -50,11 +50,7 @@ img {
 }
 
 .eyebrow {
-  margin: 0 0 6px;
   color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 11px;
 }
 
 .topbar h1 {
