@@ -223,14 +223,14 @@ function renderHome() {
       <a class="category-card" href="#category/${encodeURIComponent(category)}">
         <div>
           <h3>${escapeHtml(category)}</h3>
-          <p>${items.length} products</p>
-          <p>From ₹${formatPrice(startPrice)}</p>
+          <p>${items.length} products · From ₹${formatPrice(startPrice)}</p>
         </div>
         <div class="category-arrow">View collection →</div>
       </a>
     `;
   }).join("");
-    app.innerHTML = `
+
+  app.innerHTML = `
     <section class="carousel">
       <div class="carousel-track" id="carouselTrack">
         <div class="carousel-slide">
@@ -272,6 +272,7 @@ function renderHome() {
       ${cards}
     </section>
   `;
+
   initCarousel();
 }
 
@@ -407,6 +408,7 @@ function escapeHtml(value) {
 function escapeAttribute(value) {
   return escapeHtml(value).replace(/`/g, "&#96;");
 }
+
 function initCarousel() {
   const track = document.getElementById("carouselTrack");
   const dots = document.querySelectorAll(".dot");
