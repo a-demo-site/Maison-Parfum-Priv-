@@ -23,6 +23,7 @@ html {
 body {
   background: #f8f6f2;
   color: var(--text);
+  border-top: 3px solid #9a7b4f;
 }
 
 a {
