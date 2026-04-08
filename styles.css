@@ -428,6 +428,12 @@ img {
   background: #1a1208;
   overflow: hidden;
 }
+@media (min-width: 700px) {
+  .carousel-slide {
+    aspect-ratio: unset;
+    height: 420px;
+  }
+}
 
 .carousel-slide img {
   width: 100%;
