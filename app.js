@@ -19,13 +19,15 @@ Yves Saint Laurent,Libre Gold,12690,"https://source.unsplash.com/featured/1200x1
 Yves Saint Laurent,Y Signature,11490,"https://source.unsplash.com/featured/1200x1200/?YSL,Y,perfume,bottle&sig=12","A clean modern fragrance with bright freshness, herbal depth, and a smooth woody base.",100,"Apple, ginger, sage, cedarwood"`;
 
 const CATEGORY_ORDER = ["Chanel", "Dior", "Creed", "Yves Saint Laurent"];
-const app = document.getElementById("app");
+
 const BRAND_IMAGES = {
   "Chanel": "assets/banner1.jpg",
   "Dior": "assets/banner2.jpg",
   "Creed": "assets/banner3.jpg",
   "Yves Saint Laurent": "assets/banner1.jpg"
 };
+
+const app = document.getElementById("app");
 
 const PLACEHOLDER_IMAGE =
   "data:image/svg+xml;charset=UTF-8," +
