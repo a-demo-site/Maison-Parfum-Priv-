@@ -230,12 +230,36 @@ function renderHome() {
       </a>
     `;
   }).join("");
-
-  app.innerHTML = `
-    <section class="editorial-banner">
-      <p class="editorial-sub">New arrivals · 2025 Collection</p>
-      <h2 class="editorial-title">Crafted for those<br>who know.</h2>
-      <p class="editorial-note">Four of the world's most celebrated houses.</p>
+    app.innerHTML = `
+    <section class="carousel">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide">
+          <img src="https://images.unsplash.com/photo-1541643600914-78b084683702?w=900&q=80" alt="Chanel Collection" />
+          <div class="carousel-caption">
+            <p class="editorial-sub">Chanel · Exclusive Collection</p>
+            <h2 class="editorial-title">Timeless<br>Elegance.</h2>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=900&q=80" alt="Dior Collection" />
+          <div class="carousel-caption">
+            <p class="editorial-sub">Dior · Haute Parfumerie</p>
+            <h2 class="editorial-title">Born to<br>Bloom.</h2>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://images.unsplash.com/photo-1590156206657-aec4e8708b27?w=900&q=80" alt="Creed Collection" />
+          <div class="carousel-caption">
+            <p class="editorial-sub">Creed · Heritage Since 1760</p>
+            <h2 class="editorial-title">Wear Your<br>Legacy.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-dots" id="carouselDots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
     </section>
 
     <div class="section-row">
@@ -248,6 +272,7 @@ function renderHome() {
       ${cards}
     </section>
   `;
+  initCarousel();
 }
 
 function renderCategory(categoryName) {
