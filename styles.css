@@ -295,12 +295,12 @@ img {
   list-style: none;
 }
 
-.note-chip {
+note-chip {
   padding: 10px 12px;
   border-radius: 999px;
-  background: rgba(200, 169, 106, 0.1);
-  border: 1px solid var(--line);
-  color: var(--white);
+  background: rgba(154, 123, 79, 0.1);
+  border: 1px solid rgba(154, 123, 79, 0.3);
+  color: #3a2e1e;
   font-size: 13px;
 }
 
