@@ -295,13 +295,15 @@ img {
   list-style: none;
 }
 
-note-chip {
-  padding: 10px 12px;
+.note-chip {
+  display: inline-block;
+  padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(154, 123, 79, 0.1);
-  border: 1px solid rgba(154, 123, 79, 0.3);
+  background: #f0ece4;
+  border: 1.5px solid #c8a96a;
   color: #3a2e1e;
   font-size: 13px;
+  font-weight: 500;
 }
 
 .actions {
